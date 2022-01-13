@@ -183,7 +183,7 @@
                  <audio src="sample1.mp3" controls></audio>
                </td>
               <td>€29,99</td>
-              <td><img src="winkelwagen.jpg" alt="winkelwagen"></td>
+              <td><id="p1" img src="winkelwagen.jpg" alt="winkelwagen"></td>
           </tr>
           <tr>
              <td>Sample 2</td>
@@ -199,11 +199,16 @@
           </tr>
         </table>
        
-    <audio>
-       <source src="let-it-go-12279.mp3" type="let-it-go-12279/MPEG"></source>
-       <source src="let-it-go-12279.wav" type="let-it-go-12279/WAV"></source>
-       <source src="let-it-go-12279.ogg" type="let-it-go-12279/OGG"></source>
-   </audio>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script>
+         $(document).ready(function(){
+         $("#p1").mousedown(function(){
+            alert("Neem contact op voor een facatuur!");
+          });
+          });
+         </script>
+       
+  
        
    </div>
          
