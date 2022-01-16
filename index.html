@@ -112,10 +112,9 @@
        
     </div>
 
-    <input type="radio" id="tab6" name="mytabs">
-    <label for="tab6">Contact</label>
-    <div class="tab">
-       
+    <input type="radio" id="tab7" name="mytabs">
+    <label for="tab7">Contact</label>
+    <div class="tab"> 
       <h2>Contact</h2>
        <p>Voor vragen en/of een offert stuur een mail:</p>
        <a href="mailto:semblaas6@gmail.com">Send email.</a>
@@ -123,6 +122,84 @@
        <a href="tel:+31 6 30247851">+31 6 30247851</a>    
     </div>
     
+     <input type="radio" id="tabvijf" name="mytabs">
+    <label for="tabvijf">Producten</label>
+    <div class="tab">
+      <h3>Producten</h3>
+      <p>Wij hebben ons verdiept in de online samples, en zijn zelf ook begonnen met het maken van online samples. De samples kunnen onder verdeeld worden in de volgende catogoriën:</p>
+       <ul>
+         <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#product">Producten</a></li>
+       </ul>
+       <a id="introduction">Introductie over online samples:</a>
+       <p></p>
+       <p> </p>
+       <a id="product">Producten</a>
+       <table>
+           <tr>
+               <th>Product</th>
+               <th>Inhoud</th>
+               <th>Prijs</th>
+               <th>Winkelwagen</th>
+           </tr>
+           <tr>
+              <td>Sample 1</td>
+              <td> 
+                 <audio src="sample1.mp3" controls></audio>
+               </td>
+              <td>€29,99</td>
+              <td>
+                 <p id="p1">Buy</p>
+              </td>
+          </tr>
+          <tr>
+             <td>Sample 2</td>
+             <td>(hier het geluid)</td>
+             <td>€25,99</td>
+             <td>
+                 <p id="p2">Buy</p>
+              </td>
+          </tr>
+          <tr>
+             <td>Sample 3</td>
+             <td>(hier het geluid)</td>
+             <td>€42,99</td>
+             <td>
+                 <p id="p3">Buy</p>
+              </td>
+          </tr>
+        </table>
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script>
+         $(document).ready(function(){
+         $("#p1").mousedown(function(){
+            alert("Neem contact op voor een facatuur!");
+          });
+          });
+         </script>
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script>
+         $(document).ready(function(){
+         $("#p2").mousedown(function(){
+            alert("Neem contact op voor een facatuur!");
+          });
+          });
+         </script>
+  
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script>
+         $(document).ready(function(){
+         $("#p3").mousedown(function(){
+            alert("Neem contact op voor een facatuur!");
+          });
+          });
+         </script>
+       
+   </div>
+         
+     
     <input type="radio" id="tabdiamond" name="mytabs">
     <label for="tabdiamond">Over ons</label>
     <div class="tab">
@@ -221,83 +298,7 @@ function showSlides(n) {
     
    </div>
      
-      <input type="radio" id="tabvijf" name="mytabs">
-    <label for="tabvijf">Producten</label>
-    <div class="tab">
-      <h3>Producten</h3>
-      <p>Wij hebben ons verdiept in de online samples, en zijn zelf ook begonnen met het maken van online samples. De samples kunnen onder verdeeld worden in de volgende catogoriën:</p>
-       <ul>
-         <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#product">Producten</a></li>
-       </ul>
-       <a id="introduction">Introductie over online samples:</a>
-       <p></p>
-       <p> </p>
-       <a id="product">Producten</a>
-       <table>
-           <tr>
-               <th>Product</th>
-               <th>Inhoud</th>
-               <th>Prijs</th>
-               <th>Winkelwagen</th>
-           </tr>
-           <tr>
-              <td>Sample 1</td>
-              <td> 
-                 <audio src="sample1.mp3" controls></audio>
-               </td>
-              <td>€29,99</td>
-              <td>
-                 <p id="p1">Buy</p>
-              </td>
-          </tr>
-          <tr>
-             <td>Sample 2</td>
-             <td>(hier het geluid)</td>
-             <td>€25,99</td>
-             <td>
-                 <p id="p2">Buy</p>
-              </td>
-          </tr>
-          <tr>
-             <td>Sample 3</td>
-             <td>(hier het geluid)</td>
-             <td>€42,99</td>
-             <td>
-                 <p id="p3">Buy</p>
-              </td>
-          </tr>
-        </table>
-       
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-         <script>
-         $(document).ready(function(){
-         $("#p1").mousedown(function(){
-            alert("Neem contact op voor een facatuur!");
-          });
-          });
-         </script>
-       
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-         <script>
-         $(document).ready(function(){
-         $("#p2").mousedown(function(){
-            alert("Neem contact op voor een facatuur!");
-          });
-          });
-         </script>
-  
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-         <script>
-         $(document).ready(function(){
-         $("#p3").mousedown(function(){
-            alert("Neem contact op voor een facatuur!");
-          });
-          });
-         </script>
-       
-   </div>
-         
+     
      
     
 </body>
