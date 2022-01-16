@@ -201,7 +201,7 @@
          
      
     <input type="radio" id="tabdiamond" name="mytabs">
-    <label for="tabdiamond">Over ons</label>
+    <label for="tabdiamond">Over Sem</label>
     <div class="tab">
       <div class="container">
 <h2 style="text-align:center">Day in the life of Sem</h2>
@@ -297,6 +297,107 @@ function showSlides(n) {
 </script>
     
    </div>
+     
+                                                          
+                                                          
+       <input type="radio" id="tab8" name="mytabs">
+    <label for="tab8">Over Juul</label>
+    <div class="tab">
+      <div class="container">
+<h2 style="text-align:center">Day in the life of Juul</h2>
+                                                          <p>vertel hier iets over je foto's</p>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="papa.JPG" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="vriendschap.JPG" style="width:50%" padding=50px;>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="feyenoordsem.jpg" style="width:50%" padding=50px;>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="oudekalefotosem.JPG" style="width:50%" padding=50px;>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="muziek1.jpg" style="width:50%" padding=50px';>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="sem.jpg" style="width:50%" padding=50px;>
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="papa.JPG" style="width:50%" onclick="currentSlide(1)" alt="Sem met zijn vader">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="vriendschap.JPG" style="width:50%" onclick="currentSlide(2)" alt="Sem en zijn vrienden">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="feyenoordsem.jpg" style="width:50%" onclick="currentSlide(3)" alt="Sem en Feyenoord">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="oudekalefotosem.JPG" style="width:50%" onclick="currentSlide(4)" alt="Sem in zijn jonge jaren">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="muziek1.jpg" style="width:50%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="sem.jpg" style="width:50%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+   </div>
+     
      
      
      
